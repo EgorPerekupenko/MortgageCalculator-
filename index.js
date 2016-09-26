@@ -18,10 +18,10 @@ var period=$("#selectPeriod option:selected").val();
     var interestQuotient  = (monthlyInterestRate * compoundedInterestRate) / (compoundedInterestRate - 1);
 
     // final calculation
-    var monthlyPayment = loanBalance * interestQuotient;
+    var monthlyPayment = Math.floor(loanBalance * interestQuotient);
 
 
-$("#output").text("Your monthly payment will be " + monthlyPayment);
+$("#output").text("Your monthly payment will be " + monthlyPayment + "$");
 }) 
 
   
