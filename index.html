@@ -1,0 +1,112 @@
+
+<!DOCUMENT html>
+<html>
+<head>
+<title>Mortage calculator</title>
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+	<body>
+
+		<div class="container">
+			
+			<div class="col-sm-6 col-sm-offset-2">
+			   <h1>Mortage Calculator</h1>	
+		 
+				<div class="row">
+                   
+                   <div class="col-xs-12 col-sm-4">
+                     
+                     <label>Loan Balance</label>
+			           
+			       </div> 
+			           
+			           	<div class="col-xs-12 col-sm-8">
+			             
+			             		<input type="number" name="balance" id="Balance" class="form-control" placeholder="Enter your loan balance ">
+				       
+				       </div>
+				  				 
+				</div>
+
+                
+                <div class="row">
+                   
+                   <div class="col-xs-12 col-sm-4">
+                     
+                     <label>Percentage Rate</label>
+			           
+			       </div> 
+			           
+			           	<div class="col-xs-12 col-sm-8">
+			             
+			             		<input   type="number" id="Rate" class ="form-control" name="rate" placeholder="Enter your loan rate" >
+				       
+				        </div>
+				   
+				</div>
+ 
+				
+				<div class="row">
+                   
+                   <div class="col-xs-12 col-sm-4">
+                     
+                     <label>Loan Term</label>
+			           
+			       </div> 
+			           
+			           	<div class="col-xs-12 col-sm-8">
+			             
+			             		<input  id="Term" class="form-control" name="term" placeholder="Enter your loan term">
+				       </div>
+				</div>
+                
+
+
+				<div class="row">
+                   
+                   <div class="col-xs-12 col-sm-4">
+                     
+                     <label>Period</label>
+			           
+			       </div> 
+			           
+			           	<div class="col-xs-12 col-sm-8">
+			               
+			               <select id="selectPeriod" class="form-control">
+							   
+							   <option value="12">Monthly(12)</option>
+							   
+							   <option value="6">Bimonthly(6)</option>
+						   
+						   </select>
+			             		
+				       
+				       </div>
+				</div>
+                
+               
+	            <div class="row">
+                	
+                	<div class="col-xs-12 col-sm-10 col-sm-offset-4">
+                	
+                		<button class="btn btn-primary" id="MortgageCalculator" >Calculate</button>
+                	
+                	</div>
+                
+                </div>
+						
+                     <div class="row">
+						<div class=" well col-xs-12 " id="output"  >
+							
+						</div>
+		             </div>
+            </div>
+		</div>	
+
+					
+                <script  src="bower_components/jquery/dist/jquery.js"></script>
+                <script src="index.js"></script>
+
+     </body>
+
+</html>
